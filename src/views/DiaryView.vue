@@ -1,109 +1,161 @@
 <template>
   <div class="p-2 mx-auto max-w-5xl relative z-10">
-    <!-- <Separator></Separator> -->
-
-    <div class="mt-4 mb-8">
-      <p class="text-5xl max-md:text-center font-bold">Lorem Ipsum</p>
-    </div>
-    <div class="sticky top-16 z-10 rounded bg-secondary px-2 py-2 flex">
-      <input type="text" class="bg-background px-2 py-1 rounded" placeholder="s" value="Testing A" />
-      <button class="ml-2 bg-primary text-background font-bold px-4 py-1 rounded">Add</button>
+    <div class="mt-4 mb-8 text-center">
+      <p class="text-5xl max-md:text-center font-bold">Hobbies</p>
+      <p class="opacity-75 mt-2">
+        Une page plus personnelle où je partage mes centres d’intérêt en dehors des cours.
+      </p>
     </div>
 
-    <div class="mt-8 grid md:grid-cols-2 gap-4">
-      <template v-for="post in posts">
-        <router-link
-          to="/p/A"
-          v-if="post.image === undefined"
-          class="bg-background rounded border border-secondary px-4 py-2"
-        >
-          <div class="flex gap-2 border-b border-secondary border-opacity-50 pb-2">
-            <div class="p-1">
-              <Icon icon="mingcute:fire-fill" class="text-white" style="font-size: 2.5em" />
-            </div>
-            <div class="w-full">
-              <p class="font-bold text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquid.</p>
-              <p class="text-sm">
-                <span class="text-accent font-bold mr-2">@Kyuiki</span>
-                <span class="opacity-50"> 12:59, Jun 25 2024 </span>
-              </p>
-            </div>
-            <div class="">
-              <button class="pt-1 rounded">
-                <Icon icon="mingcute:external-link-fill" class="text-white" style="font-size: 1.5em" />
-              </button>
-            </div>
-          </div>
-          <div class="py-2">
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos.</p>
-          </div>
-        </router-link>
-        <!-- image -->
-        <div v-else class="bg-background rounded border border-secondary px-4 py-2 row-span-3 max-sm:row-span-1">
-          <div class="py-2">
-            <img
-              src="/kyuiki_anime.png"
-              alt=""
-              class="max-w-full aspect-square max-h-full bg-secondary object-cover bg-pattern"
-            />
-          </div>
-          <div class="flex gap-2 border-t border-secondary border-opacity-50 py-2">
-            <div class="p-1">
-              <Icon icon="mingcute:fire-fill" class="text-white" style="font-size: 2.5em" />
-            </div>
-            <div class="w-full">
-              <p class="font-bold text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquid.</p>
-              <p class="text-sm">
-                <span class="text-accent font-bold mr-2">@Kyuiki</span>
-                <span class="opacity-50"> 12:59, Jun 25 2024 </span>
-              </p>
-            </div>
-            <div class="">
-              <button class="pt-1 rounded">
-                <Icon icon="mingcute:external-link-fill" class="text-white" style="font-size: 1.5em" />
-              </button>
-            </div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="bg-background rounded border border-secondary px-4 py-3">
+        <div class="flex gap-3 border-b border-secondary border-opacity-50 pb-2">
+          <Icon icon="mingcute:game-2-fill" class="text-primary" style="font-size: 2.5em" />
+          <div>
+            <p class="font-bold text-lg">Jeux vidéo compétitifs</p>
+            <p class="text-sm opacity-60">Stratégie • Réflexes • Travail d’équipe</p>
           </div>
         </div>
-      </template>
+        <p class="py-2">
+          J’aime les jeux compétitifs parce qu’ils demandent de la concentration,
+          de la stratégie et une prise de décision rapide. C’est aussi un bon moyen
+          de travailler la communication en équipe.
+        </p>
+      </div>
+
+      <div class="bg-background rounded border border-secondary px-4 py-3">
+        <div class="flex gap-3 border-b border-secondary border-opacity-50 pb-2">
+          <Icon icon="mingcute:movie-fill" class="text-primary" style="font-size: 2.5em" />
+          <div>
+            <p class="font-bold text-lg">Anime & manga</p>
+            <p class="text-sm opacity-60">Univers visuels • Histoires • Inspiration</p>
+          </div>
+        </div>
+        <p class="py-2">
+          J’aime découvrir des univers différents à travers les anime et les manga.
+          Cela m’inspire aussi pour le design, l’ambiance visuelle et la créativité
+          dans mes projets web.
+        </p>
+      </div>
+
+      <div class="bg-background rounded border border-secondary px-4 py-3">
+        <div class="flex gap-3 border-b border-secondary border-opacity-50 pb-2">
+          <Icon icon="mingcute:code-fill" class="text-primary" style="font-size: 2.5em" />
+          <div>
+            <p class="font-bold text-lg">Web & expérimentation</p>
+            <p class="text-sm opacity-60">Vue • Design • Templates</p>
+          </div>
+        </div>
+        <p class="py-2">
+          J’aime tester de nouveaux outils et modifier des projets existants pour
+          comprendre comment ils fonctionnent. Ce portfolio m’a permis de découvrir
+          Vue, Vite, npm et GitHub Actions.
+        </p>
+      </div>
+
+      <div class="bg-background rounded border border-secondary px-4 py-3">
+        <div class="flex gap-3 border-b border-secondary border-opacity-50 pb-2">
+          <Icon icon="mingcute:planet-fill" class="text-primary" style="font-size: 2.5em" />
+          <div>
+            <p class="font-bold text-lg">Culture japonaise</p>
+            <p class="text-sm opacity-60">Langue • Culture • Découverte</p>
+          </div>
+        </div>
+        <p class="py-2">
+          Je commence aussi à m’intéresser à la langue japonaise et à certains aspects
+          de la culture japonaise. C’est un centre d’intérêt que j’aimerais développer
+          progressivement.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <p class="text-3xl font-bold text-center mb-6">Blinkies & badges</p>
+
+      <div class="bg-background rounded border border-secondary p-4">
+        <div class="flex flex-wrap gap-2 justify-center">
+          <span
+            v-for="badge in badges"
+            :key="badge"
+            class="px-3 py-1 rounded bg-secondary text-sm font-bold border border-primary"
+          >
+            {{ badge }}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <p class="text-3xl font-bold text-center mb-6">Anime / Manga list</p>
+
+      <div class="bg-background rounded border border-secondary overflow-hidden">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-secondary">
+            <tr>
+              <th class="px-3 py-2">Titre</th>
+              <th class="px-3 py-2">Type</th>
+              <th class="px-3 py-2">Statut</th>
+              <th class="px-3 py-2">Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="item in animeList"
+              :key="item.title"
+              class="border-t border-secondary border-opacity-50"
+            >
+              <td class="px-3 py-2 font-bold">{{ item.title }}</td>
+              <td class="px-3 py-2">{{ item.type }}</td>
+              <td class="px-3 py-2">{{ item.status }}</td>
+              <td class="px-3 py-2 text-primary font-bold">{{ item.score }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-center mt-4 opacity-75 text-sm">
+        Plus tard, cette section pourra être reliée à AniList.
+      </p>
     </div>
   </div>
 </template>
 
 <script setup>
-  import { ref } from "vue";
-  const posts = ref([
-    {
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquid.",
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos.",
-      image: "/kyuiki_anime.png"
-    },
-    {
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquid.",
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos."
-    },
-    {
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquid.",
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos."
-    },
-    {
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquid.",
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos.",
-      image: "/kyuiki_anime.png"
-    },
-    {
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquid.",
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos."
-    }
-  ]);
-</script>
+const badges = [
+  "anime fan",
+  "manga reader",
+  "gaming",
+  "web design",
+  "Vue learner",
+  "R&T student",
+  "Linux curious",
+  "IoT"
+];
 
-<style>
-  @media (min-width: 1024px) {
-    .about {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
+const animeList = [
+  {
+    title: "Steins;Gate",
+    type: "Anime",
+    status: "Complété",
+    score: "95"
+  },
+  {
+    title: "Chainsaw Man",
+    type: "Manga",
+    status: "En lecture",
+    score: "90"
+  },
+  {
+    title: "Sousou no Frieren",
+    type: "Anime",
+    status: "À regarder",
+    score: "-"
+  },
+  {
+    title: "One Piece",
+    type: "Anime/Manga",
+    status: "En cours",
+    score: "-"
   }
-</style>
+];
+</script>

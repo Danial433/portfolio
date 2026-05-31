@@ -2,7 +2,7 @@
   <div class="py-24 pt-16 px-2 mx-auto max-w-5xl">
     <HeroComp />
 
-    <div class="py-8 text-center rounded">
+    <div id="about" class="py-8 text-center rounded">
       <h2 class="text-3xl font-bold text-center">À Propos</h2>
       <Separator />
     </div>
@@ -54,7 +54,7 @@
           </button>
         </div>
       </WindowContainer>
-      <WindowContainer title="Compétences & technologies" icon="mingcute:server-fill" class="md:col-span-2 min-w-0">
+      <WindowContainer id="skills" title="Compétences & technologies" icon="mingcute:server-fill" class="md:col-span-2 min-w-0">
         <div class="my-2 mb-4 text-center">
           <div class="flex gap-4 max-md:flex-col w-full items-center">
             <div class="my-2 mt-4 text-md md:text-right w-full">
@@ -113,7 +113,7 @@
         </div>
       </WindowContainer>
     </div>
-    <div class="mt-24 mb-16">
+    <div id="projects" class="mt-24 mb-16">
       <h2 class="text-3xl font-bold text-center">Projets</h2>
       <Separator />
     </div>

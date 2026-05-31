@@ -94,8 +94,10 @@
 
 const navs = [
   { name: "Accueil", icon: "home-2-fill", path: "/" },
+  { name: "À propos", icon: "user-3-fill", path: "/#about" },
   { name: "Projets", icon: "folder-fill", path: "/#projects" },
   { name: "Compétences", icon: "code-fill", path: "/#skills" },
+  { name: "Hobbies", icon: "book-5-fill", path: "/hobbies" },
   { name: "Contact", icon: "mail-fill", path: "/#contact" }
 ];
 </script>
