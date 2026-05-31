@@ -1,9 +1,9 @@
 <template>
-  <div title="Heyya!" class="mx-auto pt-20 pb-16 sm:py-24 max-w-3xl" icon="mingcute:heart-fill">s
+  <div title="Heyya!" class="mx-auto pt-20 pb-16 sm:py-24 max-w-3xl" icon="mingcute:heart-fill">
     <div class="flex max-[412px]:flex-col gap-4 max-[412px]:items-center">
       <div class="flex-shrink-0 mt-2">
         <img
-          src="/avatar.png"
+          src="/danial.jpg"
           v-motion
           :initial="{
             rotate: -10,
