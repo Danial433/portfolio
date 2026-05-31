@@ -74,13 +74,13 @@
 
       <div class="bg-background rounded border border-secondary p-4">
         <div class="flex flex-wrap gap-2 justify-center">
-          <span
-            v-for="badge in badges"
-            :key="badge"
-            class="px-3 py-1 rounded bg-secondary text-sm font-bold border border-primary"
-          >
-            {{ badge }}
-          </span>
+          <img
+            v-for="blinkie in blinkies"
+            :key="blinkie.name"
+            :src="blinkie.src"
+            :alt="blinkie.name"
+            class="h-[31px] w-[88px] image-render-pixel hover:scale-110 duration-200"
+          />
         </div>
       </div>
     </div>
@@ -121,15 +121,43 @@
 </template>
 
 <script setup>
-const badges = [
-  "anime fan",
-  "manga reader",
-  "gaming",
-  "web design",
-  "Vue learner",
-  "R&T student",
-  "Linux curious",
-  "IoT"
+const blinkies = [
+  {
+    name: "Blinkie 1",
+    src: import.meta.env.BASE_URL + "blinkies/blinkie1.gif"
+  },
+  {
+    name: "Blinkie 2",
+    src: import.meta.env.BASE_URL + "blinkies/blinkie2.gif"
+  },
+  {
+    name: "Blinkie 3",
+    src: import.meta.env.BASE_URL + "blinkies/blinkie3.gif"
+  },
+  {
+    name: "Blinkie 4",
+    src: import.meta.env.BASE_URL + "blinkies/blinkie4.gif"
+  },
+  {
+    name: "Blinkie 5",
+    src: import.meta.env.BASE_URL + "blinkies/blinkie5.gif"
+  },
+  {
+    name: "Blinkie 6",
+    src: import.meta.env.BASE_URL + "blinkies/blinkie6.gif"
+  },
+  {
+    name: "Blinkie 7",
+    src: import.meta.env.BASE_URL + "blinkies/blinkie7.png"
+  },
+  {
+    name: "Blinkie 8",
+    src: import.meta.env.BASE_URL + "blinkies/blinkie8.gif"
+  },
+  {
+    name: "Blinkie 9",
+    src: import.meta.env.BASE_URL + "blinkies/blinkie9.png"
+  }
 ];
 
 const animeList = [
@@ -159,3 +187,9 @@ const animeList = [
   }
 ];
 </script>
+
+<style scoped>
+.image-render-pixel {
+  image-rendering: pixelated;
+}
+</style>
