@@ -3,7 +3,7 @@
     <div class="flex max-[412px]:flex-col gap-4 max-[412px]:items-center">
       <div class="flex-shrink-0 mt-2">
         <img
-          src="/kyuiki.png"
+          src="/danial.jpg"
           v-motion
           :initial="{
             rotate: -10,
