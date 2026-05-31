@@ -113,9 +113,21 @@
         </table>
       </div>
 
-      <p class="text-center mt-4 opacity-75 text-sm">
-        Plus tard, cette section pourra être reliée à AniList.
-      </p>
+      <div class="text-center mt-4">
+        <p class="opacity-75 text-sm mb-3">
+          Cette section présente quelques anime et manga que je suis ou que j’apprécie.
+        </p>
+
+        <a
+          href="https://anilist.co/user/Jikue"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-background font-bold rounded hover:scale-105 duration-200"
+        >
+          <Icon icon="mingcute:external-link-fill" class="text-xl" />
+          Voir mon AniList
+        </a>
+      </div>
     </div>
   </div>
 </template>
