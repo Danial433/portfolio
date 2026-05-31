@@ -21,7 +21,7 @@
           :key="nav.name"
           :to="nav.path"
           :title="nav.name"
-          class="px-2 inline-block py-1 text-background duration-300 h-full hover:border-secondary hover:text-secondary border-primary border-b-4"
+          class="px-1.5 sm:px-2 inline-block py-1 text-background duration-300 h-full hover:border-secondary hover:text-secondary border-primary border-b-4"
         >
           <Icon
             v-motion
@@ -41,7 +41,7 @@
               }
             }"
             :icon="'mingcute:' + nav.icon"
-            class="text-4xl inline"
+            class="text-3xl sm:text-4xl inline"
           />
         </router-link>
       </div>
@@ -73,7 +73,7 @@
         </button>
 
         <div
-          class="z-10 relative"
+          class="z-10 relative hidden sm:block"
           v-motion
           :initial="{
             scale: 0,
@@ -103,8 +103,6 @@
 import { computed } from "vue";
 import { useLanguage } from "@/stores/language";
 import { text } from "@/translations/portfolioText";
-
-defineProps(["top"]);
 
 const { currentLanguage, toggleLanguage } = useLanguage();
 

@@ -152,8 +152,8 @@
         </div>
       </div>
 
-      <div class="bg-background rounded border border-secondary overflow-hidden">
-        <table class="w-full text-left text-sm">
+      <div class="bg-background rounded border border-secondary overflow-x-auto">
+        <table class="w-full min-w-[600px] text-left text-sm">
           <thead class="bg-secondary">
             <tr>
               <th class="px-3 py-2">{{ t.hobbies.tableTitle }}</th>
