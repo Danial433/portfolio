@@ -1,5 +1,12 @@
 export const text = {
   fr: {
+    nav: {
+      home: "Accueil",
+      about: "À propos",
+      projects: "Projets",
+      skills: "Compétences",
+      hobbies: "Hobbies"
+    },
     hero: {
       nickname: "[ Danial ]",
       fullName: "/ Muhammad Danial A'qil",
@@ -9,6 +16,13 @@ export const text = {
   },
 
   en: {
+    nav: {
+      home: "Home",
+      about: "About",
+      projects: "Projects",
+      skills: "Skills",
+      hobbies: "Hobbies"
+    },
     hero: {
       nickname: "[ Danial ]",
       fullName: "/ Muhammad Danial A'qil",
