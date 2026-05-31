@@ -45,7 +45,10 @@
             </p>
           </div>
 
-          <a href="#skills" class="inline-block px-4 py-2 mt-2 bg-primary font-semibold rounded text-background">
+          <a
+            href="#skills"
+            class="inline-block px-4 py-2 mt-2 bg-primary font-semibold rounded text-background"
+          >
             <Icon icon="mingcute:book-2-fill" class="text-xl inline mr-1" />
             <span>Voir mes compétences</span>
           </a>
@@ -60,7 +63,10 @@
             structurés.
           </div>
 
-          <a href="#projects" class="inline-block px-4 py-2 mt-2 bg-primary font-semibold rounded text-background">
+          <a
+            href="#projects"
+            class="inline-block px-4 py-2 mt-2 bg-primary font-semibold rounded text-background"
+          >
             <Icon icon="mingcute:sparkles-2-fill" class="text-xl inline mr-1" />
             <span>Voir mes projets</span>
           </a>
@@ -148,7 +154,10 @@
 
             <div class="flex flex-wrap gap-4 my-8 justify-center">
               <template v-for="(icon, text, i) in prog.lang" :key="text">
-                <div class="border-secondary border-2 px-3 py-2 rounded" :style="{ opacity: 4 / (i + 1) }">
+                <div
+                  class="border-secondary border-2 px-3 py-2 rounded"
+                  :style="{ opacity: 4 / (i + 1) }"
+                >
                   <Icon :icon="'devicon:' + icon" style="font-size: 4em" class="inline mb-2" />
                   <p>{{ text }}</p>
                 </div>
@@ -164,22 +173,35 @@
       <Separator />
     </div>
 
-    <WindowContainer title="SAE_Thales17" class="mx-auto max-w-sm" icon="mingcute:code-fill">
-      <div class="p-2">
-        <h3 class="text-lg font-bold text-center">Plateforme web de galerie</h3>
+    <div class="grid md:grid-cols-3 gap-4">
+      <ProjectCardComp
+        title="SAE_Thales17"
+        description="Plateforme web développée avec HTML, CSS, PHP et MySQL. Le projet comprend une gestion d’utilisateurs, un système de rôles, une galerie d’images et une future intégration avec Raspberry Pi."
+        :technologies="['HTML', 'CSS', 'PHP', 'MySQL']"
+        icon="mingcute:code-fill"
+        github="https://github.com/danial433/portfolio"
+      />
 
-        <p class="mt-2 text-center">
-          Projet principal développé avec HTML, CSS, PHP et MySQL. Il comprend une gestion
-          d'utilisateurs, un système de rôles, une galerie d'images et une future intégration
-          avec Raspberry Pi.
-        </p>
-      </div>
-    </WindowContainer>
+      <ProjectCardComp
+        title="English Communication"
+        description="Projet non technique autour de la communication professionnelle en anglais : présentations, expression orale, vocabulaire professionnel et préparation à des situations d’entretien."
+        :technologies="['Anglais', 'Communication', 'Présentation orale']"
+        icon="mingcute:microphone-fill"
+      />
+
+      <ProjectCardComp
+        title="LoRaFireGuard"
+        description="Projet IoT utilisant la technologie LoRa pour transmettre des informations liées à la détection de risques d’incendie. Ce projet m’a permis de découvrir la transmission sans fil et les paramètres LoRa."
+        :technologies="['LoRa', 'IoT', 'Arduino', 'Capteurs']"
+        icon="mingcute:signal-fill"
+      />
+    </div>
   </div>
 </template>
 
 <script setup>
 import WindowContainer from "../components/WindowContainer.vue";
+import ProjectCardComp from "../components/ProjectCardComp.vue";
 import { Vue3Marquee } from "vue3-marquee";
 import HeroComp from "../components/HeroComp.vue";
 
