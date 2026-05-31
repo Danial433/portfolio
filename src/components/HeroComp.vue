@@ -21,10 +21,11 @@
               ease: 'easeOut'
             }
           }"
-          alt=""
+          alt="Avatar de Danial"
           class="rounded-lg w-32 h-32 object-cover"
         />
       </div>
+
       <div class="py-2">
         <h1
           class="md:text-2xl text-xl"
@@ -44,9 +45,12 @@
             }
           }"
         >
-          <b class="md:text-5xl text-3xl bg-secondary bg-opacity-25 rounded px-1 pb-1">[ Danial ]</b>
+          <b class="md:text-5xl text-3xl bg-secondary bg-opacity-25 rounded px-1 pb-1">
+            [ Danial ]
+          </b>
           <small class="opacity-50 italic ml-2">/ Muhammad Danial A'qil</small>
         </h1>
+
         <p class="my-2 mt-4 md:text-lg text-md">
           <VueTyper
             class="text-text texty-textu"
@@ -56,16 +60,17 @@
             :repeat="0"
             :type-delay="7"
             caret-animation="blink"
-          >
-          </VueTyper>
+          />
         </p>
       </div>
     </div>
+
     <div class="flex flex-wrap mt-4 gap-2 justify-center">
-      <template v-for="(soc, i) in social">
+      <template v-for="(soc, i) in social" :key="soc.name">
         <a
           :href="soc.url"
           target="_blank"
+          rel="noopener noreferrer"
           class="px-2 py-1 inline-block border border-secondary bg-secondary bg-opacity-50 rounded hover:bg-opacity-100 duration-200"
           v-motion
           :initial="{
@@ -85,7 +90,7 @@
             }
           }"
         >
-          <Icon :icon="'logos:' + soc.icon" class="text-xl inline mr-2" />
+          <Icon :icon="soc.icon" class="text-xl inline mr-2" />
           <span>{{ soc.name }}</span>
         </a>
       </template>
@@ -94,31 +99,46 @@
 </template>
 
 <script setup>
-  import VueTyper from "vue3-typer";
-  import "vue3-typer/dist/vue-typer.css";
+import VueTyper from "vue3-typer";
+import "vue3-typer/dist/vue-typer.css";
 
 const social = [
-  { url: "https://github.com/danial433", icon: "github-icon", name: "GitHub" },
-  { url: "https://danial433.github.io/portfolio/", icon: "google-icon", name: "Portfolio" }
+  {
+    url: "https://github.com/danial433",
+    icon: "logos:github-icon",
+    name: "GitHub"
+  },
+  {
+    url: "https://www.linkedin.com/in/danialaqil433/",
+    icon: "logos:linkedin-icon",
+    name: "LinkedIn"
+  },
+  {
+    url: "mailto:danialaqil433@gmail.com",
+    icon: "mingcute:mail-fill",
+    name: "Email"
+  },
 ];
 </script>
 
 <style>
-  .vue-typer .char.typed {
-    all: unset;
-    animation: in-typing 0.72s;
-    position: relative;
-    display: inline;
-    white-space: pre-wrap;
+.vue-typer .char.typed {
+  all: unset;
+  animation: in-typing 0.72s;
+  position: relative;
+  display: inline;
+  white-space: pre-wrap;
+}
+
+@keyframes in-typing {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    top: -10px;
   }
-  @keyframes in-typing {
-    0% {
-      opacity: 0;
-      transform: translateY(-10px);
-      top: -10px;
-    }
-    100% {
-      top: 0px;
-    }
+
+  100% {
+    top: 0px;
   }
+}
 </style>
