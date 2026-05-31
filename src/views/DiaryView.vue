@@ -1,9 +1,25 @@
 <template>
   <div class="p-2 mx-auto max-w-5xl relative z-10">
     <div class="mt-4 mb-8 text-center">
-      <p class="text-5xl max-md:text-center font-bold">Hobbies</p>
+      <p class="text-5xl max-md:text-center font-bold">Hobbies.exe</p>
       <p class="opacity-75 mt-2">
-        Une page plus personnelle où je partage mes centres d’intérêt en dehors des cours.
+        Mon petit coin personnel sur le web.
+      </p>
+    </div>
+
+    <div class="bg-background rounded border border-secondary px-4 py-3 mb-8">
+      <div class="flex gap-3 border-b border-secondary border-opacity-50 pb-2">
+        <Icon icon="mingcute:sparkles-2-fill" class="text-primary" style="font-size: 2.5em" />
+        <div>
+          <p class="font-bold text-lg">Personal corner</p>
+          <p class="text-sm opacity-60">Hobbies • Culture web • Créativité</p>
+        </div>
+      </div>
+
+      <p class="py-2">
+        Cette page est une partie plus personnelle de mon portfolio. Elle me permet de présenter
+        quelques centres d’intérêt en dehors des projets académiques : anime, manga, jeux vidéo,
+        culture japonaise et esthétique web rétro.
       </p>
     </div>
 
@@ -73,6 +89,10 @@
       <p class="text-3xl font-bold text-center mb-6">Blinkies & badges</p>
 
       <div class="bg-background rounded border border-secondary p-4">
+        <p class="text-center opacity-75 text-sm mb-4">
+          Une petite touche inspirée de l’esthétique old-web / Y2K.
+        </p>
+
         <div class="flex flex-wrap gap-2 justify-center">
           <img
             v-for="blinkie in blinkies"
@@ -128,6 +148,13 @@
           Voir mon AniList
         </a>
       </div>
+    </div>
+
+    <div class="mt-12 mb-6 bg-background rounded border border-secondary px-4 py-3 text-center">
+      <p class="opacity-80">
+        Même si cette page est plus personnelle, elle fait aussi partie de mon identité numérique :
+        elle montre mes centres d’intérêt, ma créativité et mon envie d’expérimenter avec le web.
+      </p>
     </div>
   </div>
 </template>
