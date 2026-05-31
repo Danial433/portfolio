@@ -16,12 +16,14 @@
         rotate: 0,
         transition: { type: 'spring', stiffness: 250, damping: 8, mass: 0.5 }
       }"
-      class="from-transparent max-w-5xl mx-auto rounded overflow-hidden bg-primary max-w-5xl flex bg-pattern"
+      class="from-transparent max-w-5xl mx-auto rounded overflow-hidden bg-primary flex bg-pattern"
     >
       <div class="w-full">
         <router-link
           v-for="(nav, i) in navs"
+          :key="nav.name"
           :to="nav.path"
+          :title="nav.name"
           class="px-2 inline-block py-1 text-background duration-300 h-full hover:border-secondary hover:text-secondary border-primary border-b-4"
         >
           <Icon
@@ -33,7 +35,6 @@
             :visible="{
               scale: 1,
               rotate: 0,
-
               transition: { type: 'spring', stiffness: 250, damping: 10, mass: 0.5, delay: i * 100 }
             }"
             :icon="'mingcute:' + nav.icon"
@@ -41,9 +42,8 @@
           />
         </router-link>
       </div>
-      <div class="px-2 py-1 text-background relative">
-        <!-- <Icon icon="mingcute:home-1-fill" class="relative text-3xl inline -top-0.5" /> -->
 
+      <div class="px-2 py-1 text-background relative">
         <Icon
           icon="mingcute:cloud-fill"
           style="font-size: 12em"
@@ -56,12 +56,12 @@
             rotate: 10,
             transition: {
               repeat: Infinity,
-
               duration: 5000,
               repeatType: 'mirror'
             }
           }"
         />
+
         <div
           class="z-10 relative"
           v-motion
@@ -88,16 +88,15 @@
 </template>
 
 <script setup>
-  import { defineProps } from "vue";
+import { defineProps } from "vue";
 
-  const { top } = defineProps(["top"]);
+const { top } = defineProps(["top"]);
 
 const navs = [
   { name: "Accueil", icon: "home-2-fill", path: "/" },
   { name: "À propos", icon: "user-3-fill", path: "/#about" },
   { name: "Projets", icon: "folder-fill", path: "/#projects" },
   { name: "Compétences", icon: "code-fill", path: "/#skills" },
-  { name: "Hobbies", icon: "book-5-fill", path: "/hobbies" },
-  { name: "Contact", icon: "mail-fill", path: "/#contact" }
+  { name: "Hobbies", icon: "game-2-fill", path: "/hobbies" }
 ];
 </script>
