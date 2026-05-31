@@ -1,8 +1,7 @@
 <template>
-  <nav
-    class="sticky p-2 z-20 from-background to-transparent"
-    :class="top ? 'bg-gradient-to-b top-0' : 'bg-gradient-to-t bottom-0'"
-  >
+    <nav
+      class="fixed top-0 left-0 right-0 p-2 z-50 from-background to-transparent bg-gradient-to-b"
+    >
     <div
       v-motion
       :initial="{
