@@ -1,47 +1,42 @@
 <template>
-  <div class="py-24 pt-16 px-2 mx-auto max-w-5xl">
+  <div class="py-24 pt-24 px-2 mx-auto max-w-5xl">
     <HeroComp />
 
     <div id="about" class="py-8 text-center rounded scroll-mt-24">
-      <h2 class="text-3xl font-bold text-center">À Propos</h2>
+      <h2 class="text-3xl font-bold text-center">{{ t.home.aboutTitle }}</h2>
       <Separator />
     </div>
 
     <div class="grid md:grid-cols-2 md:gap-4 w-full gap-12">
-      <WindowContainer title="À propos" class="md:row-span-2" icon="mingcute:code-fill">
+      <WindowContainer :title="t.home.aboutCardTitle" class="md:row-span-2" icon="mingcute:code-fill">
         <div>
           <div class="my-2 mt-4 text-md">
-            <h3 class="text-xl mb-2 font-bold max-md:text-center">À Propos</h3>
+            <h3 class="text-xl mb-2 font-bold max-md:text-center">
+              {{ t.home.aboutCardTitle }}
+            </h3>
 
-            <p>
-              Je suis Muhammad Danial A'qil, étudiant en première année de BUT Réseaux &
-              Télécommunications.
+            <p>{{ t.home.about1 }}</p>
+
+            <p class="mt-2">
+              {{ t.home.about2 }}
             </p>
 
             <p class="mt-2">
-              Je m'intéresse particulièrement aux réseaux, au développement web et aux systèmes
-              connectés. À travers mes projets, j'aime comprendre comment les technologies
-              fonctionnent et développer des solutions concrètes.
-            </p>
-
-            <p class="mt-2">
-              Je travaille actuellement sur plusieurs projets, notamment SAE_Thales17, une
-              plateforme web permettant la gestion et la consultation d'images avec une future
-              intégration Raspberry Pi.
+              {{ t.home.about3 }}
             </p>
           </div>
         </div>
       </WindowContainer>
 
-      <WindowContainer title="Formation" icon="mingcute:document-2-fill">
+      <WindowContainer :title="t.home.educationTitle" icon="mingcute:document-2-fill">
         <div class="text-center my-2 mb-4">
           <div class="my-2 mt-4 text-md text-left">
-            <h3 class="text-xl mb-2 font-bold max-md:text-center">Formation</h3>
+            <h3 class="text-xl mb-2 font-bold max-md:text-center">
+              {{ t.home.educationTitle }}
+            </h3>
 
             <p>
-              Je suis actuellement en première année de BUT Réseaux & Télécommunications.
-              Cette formation me permet de développer des compétences en réseaux, systèmes,
-              télécommunications et développement web.
+              {{ t.home.educationText }}
             </p>
           </div>
 
@@ -50,17 +45,15 @@
             class="inline-block px-4 py-2 mt-2 bg-primary font-semibold rounded text-background"
           >
             <Icon icon="mingcute:book-2-fill" class="text-xl inline mr-1" />
-            <span>Voir mes compétences</span>
+            <span>{{ t.home.seeSkills }}</span>
           </a>
         </div>
       </WindowContainer>
 
-      <WindowContainer title="Objectif" icon="mingcute:target-fill">
+      <WindowContainer :title="t.home.objectiveTitle" icon="mingcute:target-fill">
         <div class="text-center my-2 mb-4">
           <div class="my-2 mt-4 text-md text-left">
-            Mon objectif est de progresser dans les domaines des réseaux, de l’administration
-            système et du développement web, afin de construire des projets utiles et bien
-            structurés.
+            {{ t.home.objectiveText }}
           </div>
 
           <a
@@ -68,14 +61,14 @@
             class="inline-block px-4 py-2 mt-2 bg-primary font-semibold rounded text-background"
           >
             <Icon icon="mingcute:sparkles-2-fill" class="text-xl inline mr-1" />
-            <span>Voir mes projets</span>
+            <span>{{ t.home.seeProjects }}</span>
           </a>
         </div>
       </WindowContainer>
 
       <WindowContainer
         id="skills"
-        title="Compétences & technologies"
+        :title="t.home.skillsTitle"
         icon="mingcute:server-fill"
         class="md:col-span-2 min-w-0 scroll-mt-24"
       >
@@ -83,14 +76,11 @@
           <div class="flex gap-4 max-md:flex-col w-full items-center">
             <div class="my-2 mt-4 text-md md:text-right w-full">
               <h3 class="text-xl mb-2 font-bold max-md:text-center">
-                Compétences en développement
+                {{ t.home.devSkillsTitle }}
               </h3>
 
               <p>
-                Je développe progressivement mes compétences en développement web à travers des
-                projets académiques et personnels. J'utilise principalement HTML, CSS, PHP et
-                MySQL pour créer des applications web simples et fonctionnelles, tout en découvrant
-                de nouvelles technologies comme Vue.js et JavaScript moderne.
+                {{ t.home.devSkillsText }}
               </p>
             </div>
 
@@ -112,13 +102,12 @@
 
           <div class="flex gap-4 max-md:flex-col w-full flex-row-reverse items-center">
             <div class="my-2 mt-4 text-md md:text-left w-full">
-              <h3 class="text-xl mb-2 font-bold max-md:text-center">Outils utilisés</h3>
+              <h3 class="text-xl mb-2 font-bold max-md:text-center">
+                {{ t.home.toolsTitle }}
+              </h3>
 
               <p>
-                Dans le cadre du BUT Réseaux & Télécommunications, j'utilise différents outils
-                pour la configuration, l'analyse et le développement de solutions réseaux. Je
-                travaille notamment avec Linux, Cisco Packet Tracer, Wireshark et Raspberry Pi
-                afin de mieux comprendre les infrastructures et systèmes connectés.
+                {{ t.home.toolsText }}
               </p>
             </div>
 
@@ -141,14 +130,11 @@
           <div class="mt-8 relative">
             <div class="text-center">
               <h3 class="text-3xl mb-2 font-bold max-md:text-center">
-                Langages de programmation utilisés
+                {{ t.home.languagesTitle }}
               </h3>
 
               <p>
-                Je continue à développer mes compétences en programmation en pratiquant différents
-                langages selon les besoins de mes projets. Mon objectif est d'acquérir une base
-                solide en développement tout en restant ouvert à l'apprentissage de nouvelles
-                technologies.
+                {{ t.home.languagesText }}
               </p>
             </div>
 
@@ -169,41 +155,36 @@
     </div>
 
     <div id="projects" class="mt-24 mb-16 scroll-mt-24">
-      <h2 class="text-3xl font-bold text-center">Projets</h2>
+      <h2 class="text-3xl font-bold text-center">{{ t.home.projectsTitle }}</h2>
       <Separator />
     </div>
 
     <div class="grid md:grid-cols-3 gap-4">
       <ProjectCardComp
-        title="SAE_Thales17"
-        description="Plateforme web développée avec HTML, CSS, PHP et MySQL. Le projet comprend une gestion d’utilisateurs, un système de rôles, une galerie d’images et une future intégration avec Raspberry Pi."
-        :technologies="['HTML', 'CSS', 'PHP', 'MySQL']"
-        icon="mingcute:code-fill"
-        github="https://github.com/danial433/portfolio"
-      />
-
-      <ProjectCardComp
-        title="English Communication"
-        description="Projet non technique autour de la communication professionnelle en anglais : présentations, expression orale, vocabulaire professionnel et préparation à des situations d’entretien."
-        :technologies="['Anglais', 'Communication', 'Présentation orale']"
-        icon="mingcute:microphone-fill"
-      />
-
-      <ProjectCardComp
-        title="LoRaFireGuard"
-        description="Projet IoT utilisant la technologie LoRa pour transmettre des informations liées à la détection de risques d’incendie. Ce projet m’a permis de découvrir la transmission sans fil et les paramètres LoRa."
-        :technologies="['LoRa', 'IoT', 'Arduino', 'Capteurs']"
-        icon="mingcute:signal-fill"
+        v-for="project in t.home.projects"
+        :key="project.title"
+        :title="project.title"
+        :description="project.description"
+        :technologies="project.technologies"
+        :icon="project.icon"
+        :github="project.github"
       />
     </div>
   </div>
 </template>
 
 <script setup>
+import { computed } from "vue";
 import WindowContainer from "../components/WindowContainer.vue";
 import ProjectCardComp from "../components/ProjectCardComp.vue";
 import { Vue3Marquee } from "vue3-marquee";
 import HeroComp from "../components/HeroComp.vue";
+import { useLanguage } from "@/stores/language";
+import { text } from "@/translations/portfolioText";
+
+const { currentLanguage } = useLanguage();
+
+const t = computed(() => text[currentLanguage.value]);
 
 const prog = {
   tech: {
