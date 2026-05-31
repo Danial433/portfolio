@@ -5,14 +5,14 @@ export const text = {
       about: "À propos",
       projects: "Projets",
       skills: "Compétences",
-      hobbies: "Hobbies"
+      hobbies: "Hobbies",
     },
 
     hero: {
       nickname: "[ Danial ]",
       fullName: "/ Muhammad Danial A'qil",
       description:
-        "Étudiant en première année de BUT Réseaux & Télécommunications. Je m'intéresse aux réseaux, au développement web et aux systèmes connectés."
+        "Étudiant en première année de BUT Réseaux & Télécommunications. Je m'intéresse aux réseaux, au développement web et aux systèmes connectés.",
     },
 
     home: {
@@ -58,7 +58,7 @@ export const text = {
             "Plateforme web développée avec HTML, CSS, PHP et MySQL. Le projet comprend une gestion d’utilisateurs, un système de rôles, une galerie d’images et une future intégration avec Raspberry Pi.",
           technologies: ["HTML", "CSS", "PHP", "MySQL"],
           icon: "mingcute:code-fill",
-          github: "https://github.com/danial433/portfolio"
+          github: "https://github.com/danial433/portfolio",
         },
         {
           title: "English Communication",
@@ -66,7 +66,7 @@ export const text = {
             "Projet non technique autour de la communication professionnelle en anglais : présentations, expression orale, vocabulaire professionnel et préparation à des situations d’entretien.",
           technologies: ["Anglais", "Communication", "Présentation orale"],
           icon: "mingcute:microphone-fill",
-          github: ""
+          github: "",
         },
         {
           title: "LoRaFireGuard",
@@ -74,10 +74,81 @@ export const text = {
             "Projet IoT utilisant la technologie LoRa pour transmettre des informations liées à la détection de risques d’incendie. Ce projet m’a permis de découvrir la transmission sans fil et les paramètres LoRa.",
           technologies: ["LoRa", "IoT", "Arduino", "Capteurs"],
           icon: "mingcute:signal-fill",
-          github: ""
-        }
-      ]
-    }
+          github: "",
+        },
+      ],
+    },
+    hobbies: {
+      title: "Hobbies.exe",
+      subtitle: "Mon petit coin personnel sur le web.",
+
+      personalTitle: "Espace personnel",
+      personalSubtitle: "Passions • Culture web • Créativité",
+      personalText:
+        "Cette page est une partie plus personnelle de mon portfolio. Elle me permet de présenter quelques centres d’intérêt en dehors des projets académiques : manga, jeux vidéo, culture japonaise et esthétique web rétro.",
+
+      gamingTitle: "Jeux vidéo compétitifs",
+      gamingSubtitle: "Stratégie • Réflexes • Travail d’équipe",
+      gamingText:
+        "J’aime les jeux compétitifs parce qu’ils demandent de la concentration, de la stratégie et une prise de décision rapide. C’est aussi un bon moyen de travailler la communication en équipe.",
+
+      mangaTitle: "Manga",
+      mangaSubtitle: "Histoires • Univers • Inspiration",
+      mangaText:
+        "J’aime découvrir des univers différents à travers les manga. Cela m’inspire aussi pour le design, l’ambiance visuelle et la créativité dans mes projets web.",
+
+      webTitle: "Web & expérimentation",
+      webSubtitle: "Vue • Design • Templates",
+      webText:
+        "J’aime tester de nouveaux outils et modifier des projets existants pour comprendre comment ils fonctionnent. Ce portfolio m’a permis de découvrir Vue, Vite, npm et GitHub Actions.",
+
+      japanTitle: "Culture japonaise",
+      japanSubtitle: "Langue • Culture • Découverte",
+      japanText:
+        "Je commence aussi à m’intéresser à la langue japonaise et à certains aspects de la culture japonaise. C’est un centre d’intérêt que j’aimerais développer progressivement.",
+
+      currentlyTitle: "En ce moment",
+      reading: "Lecture",
+      readingText: "Manga sur AniList",
+      games: "Jeux",
+      gamesText: "Jeux compétitifs",
+      learning: "Apprentissage",
+      learningText: "Vue, Vite & design web",
+      discovery: "Découverte",
+      discoveryText: "Culture japonaise",
+
+      blinkiesTitle: "Blinkies & badges",
+      blinkiesText: "Une petite touche inspirée de l’esthétique old-web / Y2K.",
+
+      mangaListTitle: "Liste manga",
+      entries: "entrées",
+      completed: "complétés",
+      readingStat: "en lecture",
+      average: "moyenne",
+
+      tableTitle: "Titre",
+      tableStatus: "Statut",
+      tableChapters: "Chapitres",
+      tableScore: "Note",
+
+      loading: "Chargement depuis AniList...",
+      error: "Impossible de charger la liste manga AniList pour le moment.",
+      anilistText:
+        "Cette section est chargée automatiquement depuis ma liste manga AniList.",
+      anilistButton: "Voir mon AniList",
+
+      closingText:
+        "Même si cette page est plus personnelle, elle fait aussi partie de mon identité numérique : elle montre mes centres d’intérêt, ma créativité et mon envie d’expérimenter avec le web.",
+
+      status: {
+        CURRENT: "En lecture",
+        COMPLETED: "Complété",
+        PAUSED: "En pause",
+        DROPPED: "Abandonné",
+        PLANNING: "À lire",
+        REPEATING: "Relecture",
+      },
+    },
   },
 
   en: {
@@ -86,14 +157,14 @@ export const text = {
       about: "About",
       projects: "Projects",
       skills: "Skills",
-      hobbies: "Hobbies"
+      hobbies: "Hobbies",
     },
 
     hero: {
       nickname: "[ Danial ]",
       fullName: "/ Muhammad Danial A'qil",
       description:
-        "First-year Networks & Telecommunications student. I am interested in networking, web development and connected systems."
+        "First-year Networks & Telecommunications student. I am interested in networking, web development and connected systems.",
     },
 
     home: {
@@ -139,7 +210,7 @@ export const text = {
             "Web platform developed with HTML, CSS, PHP and MySQL. The project includes user management, role management, an image gallery and a future Raspberry Pi integration.",
           technologies: ["HTML", "CSS", "PHP", "MySQL"],
           icon: "mingcute:code-fill",
-          github: "https://github.com/danial433/portfolio"
+          github: "https://github.com/danial433/portfolio",
         },
         {
           title: "English Communication",
@@ -147,7 +218,7 @@ export const text = {
             "Non-technical project focused on professional communication in English: presentations, speaking practice, professional vocabulary and interview preparation.",
           technologies: ["English", "Communication", "Oral presentation"],
           icon: "mingcute:microphone-fill",
-          github: ""
+          github: "",
         },
         {
           title: "LoRaFireGuard",
@@ -155,9 +226,80 @@ export const text = {
             "IoT project using LoRa technology to transmit information related to fire risk detection. This project helped me discover wireless transmission and LoRa parameters.",
           technologies: ["LoRa", "IoT", "Arduino", "Sensors"],
           icon: "mingcute:signal-fill",
-          github: ""
-        }
-      ]
-    }
-  }
+          github: "",
+        },
+      ],
+    },
+    hobbies: {
+      title: "Hobbies.exe",
+      subtitle: "My little personal corner on the web.",
+
+      personalTitle: "Personal space",
+      personalSubtitle: "Hobbies • Web culture • Creativity",
+      personalText:
+        "This page is a more personal part of my portfolio. It lets me share some interests outside academic projects: manga, video games, Japanese culture and retro web aesthetics.",
+
+      gamingTitle: "Competitive video games",
+      gamingSubtitle: "Strategy • Reflexes • Teamwork",
+      gamingText:
+        "I enjoy competitive games because they require focus, strategy and quick decision-making. They are also a good way to practice teamwork and communication.",
+
+      mangaTitle: "Manga",
+      mangaSubtitle: "Stories • Worlds • Inspiration",
+      mangaText:
+        "I enjoy discovering different worlds through manga. It also inspires me in terms of design, visual atmosphere and creativity for my web projects.",
+
+      webTitle: "Web & experimentation",
+      webSubtitle: "Vue • Design • Templates",
+      webText:
+        "I like testing new tools and modifying existing projects to understand how they work. This portfolio helped me discover Vue, Vite, npm and GitHub Actions.",
+
+      japanTitle: "Japanese culture",
+      japanSubtitle: "Language • Culture • Discovery",
+      japanText:
+        "I am also starting to become interested in the Japanese language and some aspects of Japanese culture. It is an interest I would like to develop gradually.",
+
+      currentlyTitle: "Currently",
+      reading: "Reading",
+      readingText: "Manga on AniList",
+      games: "Games",
+      gamesText: "Competitive games",
+      learning: "Learning",
+      learningText: "Vue, Vite & web design",
+      discovery: "Exploring",
+      discoveryText: "Japanese culture",
+
+      blinkiesTitle: "Blinkies & badges",
+      blinkiesText: "A small touch inspired by old-web / Y2K aesthetics.",
+
+      mangaListTitle: "Manga list",
+      entries: "entries",
+      completed: "completed",
+      readingStat: "reading",
+      average: "average",
+
+      tableTitle: "Title",
+      tableStatus: "Status",
+      tableChapters: "Chapters",
+      tableScore: "Score",
+
+      loading: "Loading from AniList...",
+      error: "Unable to load the AniList manga list at the moment.",
+      anilistText:
+        "This section is automatically loaded from my AniList manga list.",
+      anilistButton: "View my AniList",
+
+      closingText:
+        "Even though this page is more personal, it is also part of my digital identity: it shows my interests, creativity and curiosity for experimenting with the web.",
+
+      status: {
+        CURRENT: "Reading",
+        COMPLETED: "Completed",
+        PAUSED: "Paused",
+        DROPPED: "Dropped",
+        PLANNING: "Planning",
+        REPEATING: "Rereading",
+      },
+    },
+  },
 };

@@ -1,9 +1,9 @@
 <template>
   <div class="pt-24 p-2 mx-auto max-w-5xl relative z-10">
     <div class="mt-4 mb-8 text-center">
-      <p class="text-5xl max-md:text-center font-bold">Hobbies.exe</p>
+      <p class="text-5xl max-md:text-center font-bold">{{ t.hobbies.title }}</p>
       <p class="opacity-75 mt-2">
-        Mon petit coin personnel sur le web.
+        {{ t.hobbies.subtitle }}
       </p>
     </div>
 
@@ -11,15 +11,13 @@
       <div class="flex gap-3 border-b border-secondary border-opacity-50 pb-2">
         <Icon icon="mingcute:sparkles-2-fill" class="text-primary" style="font-size: 2.5em" />
         <div>
-          <p class="font-bold text-lg">Espace personnel</p>
-          <p class="text-sm opacity-60">Passions • Culture web • Créativité</p>
+          <p class="font-bold text-lg">{{ t.hobbies.personalTitle }}</p>
+          <p class="text-sm opacity-60">{{ t.hobbies.personalSubtitle }}</p>
         </div>
       </div>
 
       <p class="py-2">
-        Cette page est une partie plus personnelle de mon portfolio. Elle me permet de présenter
-        quelques centres d’intérêt en dehors des projets académiques : manga, jeux vidéo,
-        culture japonaise et esthétique web rétro.
+        {{ t.hobbies.personalText }}
       </p>
     </div>
 
@@ -28,14 +26,12 @@
         <div class="flex gap-3 border-b border-secondary border-opacity-50 pb-2">
           <Icon icon="mingcute:game-2-fill" class="text-primary" style="font-size: 2.5em" />
           <div>
-            <p class="font-bold text-lg">Jeux vidéo compétitifs</p>
-            <p class="text-sm opacity-60">Stratégie • Réflexes • Travail d’équipe</p>
+            <p class="font-bold text-lg">{{ t.hobbies.gamingTitle }}</p>
+            <p class="text-sm opacity-60">{{ t.hobbies.gamingSubtitle }}</p>
           </div>
         </div>
         <p class="py-2">
-          J’aime les jeux compétitifs parce qu’ils demandent de la concentration,
-          de la stratégie et une prise de décision rapide. C’est aussi un bon moyen
-          de travailler la communication en équipe.
+          {{ t.hobbies.gamingText }}
         </p>
       </div>
 
@@ -43,13 +39,12 @@
         <div class="flex gap-3 border-b border-secondary border-opacity-50 pb-2">
           <Icon icon="mingcute:book-5-fill" class="text-primary" style="font-size: 2.5em" />
           <div>
-            <p class="font-bold text-lg">Manga</p>
-            <p class="text-sm opacity-60">Histoires • Univers • Inspiration</p>
+            <p class="font-bold text-lg">{{ t.hobbies.mangaTitle }}</p>
+            <p class="text-sm opacity-60">{{ t.hobbies.mangaSubtitle }}</p>
           </div>
         </div>
         <p class="py-2">
-          J’aime découvrir des univers différents à travers les manga. Cela m’inspire aussi
-          pour le design, l’ambiance visuelle et la créativité dans mes projets web.
+          {{ t.hobbies.mangaText }}
         </p>
       </div>
 
@@ -57,14 +52,12 @@
         <div class="flex gap-3 border-b border-secondary border-opacity-50 pb-2">
           <Icon icon="mingcute:code-fill" class="text-primary" style="font-size: 2.5em" />
           <div>
-            <p class="font-bold text-lg">Web & expérimentation</p>
-            <p class="text-sm opacity-60">Vue • Design • Templates</p>
+            <p class="font-bold text-lg">{{ t.hobbies.webTitle }}</p>
+            <p class="text-sm opacity-60">{{ t.hobbies.webSubtitle }}</p>
           </div>
         </div>
         <p class="py-2">
-          J’aime tester de nouveaux outils et modifier des projets existants pour comprendre
-          comment ils fonctionnent. Ce portfolio m’a permis de découvrir Vue, Vite, npm
-          et GitHub Actions.
+          {{ t.hobbies.webText }}
         </p>
       </div>
 
@@ -72,54 +65,52 @@
         <div class="flex gap-3 border-b border-secondary border-opacity-50 pb-2">
           <Icon icon="mingcute:planet-fill" class="text-primary" style="font-size: 2.5em" />
           <div>
-            <p class="font-bold text-lg">Culture japonaise</p>
-            <p class="text-sm opacity-60">Langue • Culture • Découverte</p>
+            <p class="font-bold text-lg">{{ t.hobbies.japanTitle }}</p>
+            <p class="text-sm opacity-60">{{ t.hobbies.japanSubtitle }}</p>
           </div>
         </div>
         <p class="py-2">
-          Je commence aussi à m’intéresser à la langue japonaise et à certains aspects
-          de la culture japonaise. C’est un centre d’intérêt que j’aimerais développer
-          progressivement.
+          {{ t.hobbies.japanText }}
         </p>
       </div>
     </div>
 
     <div class="mt-12">
-      <p class="text-3xl font-bold text-center mb-6">En ce moment</p>
+      <p class="text-3xl font-bold text-center mb-6">{{ t.hobbies.currentlyTitle }}</p>
 
       <div class="grid md:grid-cols-4 gap-4">
         <div class="bg-background rounded border border-secondary px-4 py-3 text-center">
           <Icon icon="mingcute:book-5-fill" class="text-primary mx-auto" style="font-size: 2.5em" />
-          <p class="font-bold mt-2">Lecture</p>
-          <p class="text-sm opacity-75">Manga sur AniList</p>
+          <p class="font-bold mt-2">{{ t.hobbies.reading }}</p>
+          <p class="text-sm opacity-75">{{ t.hobbies.readingText }}</p>
         </div>
 
         <div class="bg-background rounded border border-secondary px-4 py-3 text-center">
           <Icon icon="mingcute:game-2-fill" class="text-primary mx-auto" style="font-size: 2.5em" />
-          <p class="font-bold mt-2">Jeux</p>
-          <p class="text-sm opacity-75">Jeux compétitifs</p>
+          <p class="font-bold mt-2">{{ t.hobbies.games }}</p>
+          <p class="text-sm opacity-75">{{ t.hobbies.gamesText }}</p>
         </div>
 
         <div class="bg-background rounded border border-secondary px-4 py-3 text-center">
           <Icon icon="mingcute:code-fill" class="text-primary mx-auto" style="font-size: 2.5em" />
-          <p class="font-bold mt-2">Apprentissage</p>
-          <p class="text-sm opacity-75">Vue, Vite & design web</p>
+          <p class="font-bold mt-2">{{ t.hobbies.learning }}</p>
+          <p class="text-sm opacity-75">{{ t.hobbies.learningText }}</p>
         </div>
 
         <div class="bg-background rounded border border-secondary px-4 py-3 text-center">
           <Icon icon="mingcute:planet-fill" class="text-primary mx-auto" style="font-size: 2.5em" />
-          <p class="font-bold mt-2">Découverte</p>
-          <p class="text-sm opacity-75">Culture japonaise</p>
+          <p class="font-bold mt-2">{{ t.hobbies.discovery }}</p>
+          <p class="text-sm opacity-75">{{ t.hobbies.discoveryText }}</p>
         </div>
       </div>
     </div>
 
     <div class="mt-12">
-      <p class="text-3xl font-bold text-center mb-6">Blinkies & badges</p>
+      <p class="text-3xl font-bold text-center mb-6">{{ t.hobbies.blinkiesTitle }}</p>
 
       <div class="bg-background rounded border border-secondary p-4">
         <p class="text-center opacity-75 text-sm mb-4">
-          Une petite touche inspirée de l’esthétique old-web / Y2K.
+          {{ t.hobbies.blinkiesText }}
         </p>
 
         <div class="flex flex-wrap gap-2 justify-center">
@@ -135,28 +126,28 @@
     </div>
 
     <div class="mt-12">
-      <p class="text-3xl font-bold text-center mb-6">Liste manga</p>
+      <p class="text-3xl font-bold text-center mb-6">{{ t.hobbies.mangaListTitle }}</p>
 
       <div class="bg-background rounded border border-secondary p-4 mb-4">
         <div class="grid md:grid-cols-4 gap-3 text-center">
           <div class="bg-secondary bg-opacity-50 rounded px-3 py-2">
             <p class="text-2xl font-bold text-primary">{{ mangaStats.total }}</p>
-            <p class="text-sm opacity-75">entrées</p>
+            <p class="text-sm opacity-75">{{ t.hobbies.entries }}</p>
           </div>
 
           <div class="bg-secondary bg-opacity-50 rounded px-3 py-2">
             <p class="text-2xl font-bold text-primary">{{ mangaStats.completed }}</p>
-            <p class="text-sm opacity-75">complétés</p>
+            <p class="text-sm opacity-75">{{ t.hobbies.completed }}</p>
           </div>
 
           <div class="bg-secondary bg-opacity-50 rounded px-3 py-2">
             <p class="text-2xl font-bold text-primary">{{ mangaStats.reading }}</p>
-            <p class="text-sm opacity-75">en lecture</p>
+            <p class="text-sm opacity-75">{{ t.hobbies.readingStat }}</p>
           </div>
 
           <div class="bg-secondary bg-opacity-50 rounded px-3 py-2">
             <p class="text-2xl font-bold text-primary">{{ mangaStats.averageScore }}</p>
-            <p class="text-sm opacity-75">moyenne</p>
+            <p class="text-sm opacity-75">{{ t.hobbies.average }}</p>
           </div>
         </div>
       </div>
@@ -165,23 +156,23 @@
         <table class="w-full text-left text-sm">
           <thead class="bg-secondary">
             <tr>
-              <th class="px-3 py-2">Titre</th>
-              <th class="px-3 py-2">Statut</th>
-              <th class="px-3 py-2">Chapitres</th>
-              <th class="px-3 py-2">Note</th>
+              <th class="px-3 py-2">{{ t.hobbies.tableTitle }}</th>
+              <th class="px-3 py-2">{{ t.hobbies.tableStatus }}</th>
+              <th class="px-3 py-2">{{ t.hobbies.tableChapters }}</th>
+              <th class="px-3 py-2">{{ t.hobbies.tableScore }}</th>
             </tr>
           </thead>
 
           <tbody>
             <tr v-if="loadingManga">
               <td colspan="4" class="px-3 py-4 text-center opacity-75">
-                Chargement depuis AniList...
+                {{ t.hobbies.loading }}
               </td>
             </tr>
 
             <tr v-else-if="mangaList.length === 0">
               <td colspan="4" class="px-3 py-4 text-center opacity-75">
-                Impossible de charger la liste manga AniList pour le moment.
+                {{ t.hobbies.error }}
               </td>
             </tr>
 
@@ -221,7 +212,7 @@
 
       <div class="text-center mt-4">
         <p class="opacity-75 text-sm mb-3">
-          Cette section est chargée automatiquement depuis ma liste manga AniList.
+          {{ t.hobbies.anilistText }}
         </p>
 
         <a
@@ -231,15 +222,14 @@
           class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-background font-bold rounded hover:scale-105 duration-200"
         >
           <Icon icon="mingcute:external-link-fill" class="text-xl" />
-          Voir mon AniList
+          {{ t.hobbies.anilistButton }}
         </a>
       </div>
     </div>
 
     <div class="mt-12 mb-6 bg-background rounded border border-secondary px-4 py-3 text-center">
       <p class="opacity-80">
-        Même si cette page est plus personnelle, elle fait aussi partie de mon identité numérique :
-        elle montre mes centres d’intérêt, ma créativité et mon envie d’expérimenter avec le web.
+        {{ t.hobbies.closingText }}
       </p>
     </div>
   </div>
@@ -247,6 +237,11 @@
 
 <script setup>
 import { computed, onMounted, ref } from "vue";
+import { useLanguage } from "@/stores/language";
+import { text } from "@/translations/portfolioText";
+
+const { currentLanguage } = useLanguage();
+const t = computed(() => text[currentLanguage.value]);
 
 const blinkies = [
   {
@@ -364,7 +359,6 @@ onMounted(async () => {
 
 const mangaStats = computed(() => {
   const total = mangaList.value.length;
-
   const completed = mangaList.value.filter((item) => item.status === "COMPLETED").length;
   const reading = mangaList.value.filter((item) => item.status === "CURRENT").length;
 
@@ -386,16 +380,7 @@ const mangaStats = computed(() => {
 });
 
 function formatStatus(status) {
-  const statuses = {
-    CURRENT: "En lecture",
-    COMPLETED: "Complété",
-    PAUSED: "En pause",
-    DROPPED: "Abandonné",
-    PLANNING: "À lire",
-    REPEATING: "Relecture"
-  };
-
-  return statuses[status] || status;
+  return t.value.hobbies.status[status] || status;
 }
 </script>
 
