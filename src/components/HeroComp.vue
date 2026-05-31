@@ -46,15 +46,15 @@
           }"
         >
           <b class="md:text-5xl text-3xl bg-secondary bg-opacity-25 rounded px-1 pb-1">
-            [ Danial ]
+            {{ t.hero.nickname }}
           </b>
-          <small class="opacity-50 italic ml-2">/ Muhammad Danial A'qil</small>
+          <small class="opacity-50 italic ml-2">{{ t.hero.fullName }}</small>
         </h1>
 
         <p class="my-2 mt-4 md:text-lg text-md">
           <VueTyper
             class="text-text texty-textu"
-            text="Étudiant en première année de BUT Réseaux & Télécommunications. Je m'intéresse aux réseaux, au développement web et aux systèmes connectés."
+            :text="t.hero.description"
             initial-action="typing"
             :pre-type-delay="500"
             :repeat="0"
@@ -101,6 +101,13 @@
 <script setup>
 import VueTyper from "vue3-typer";
 import "vue3-typer/dist/vue-typer.css";
+import { computed } from "vue";
+import { useLanguage } from "@/stores/language";
+import { text } from "@/translations/portfolioText";
+
+const { currentLanguage } = useLanguage();
+
+const t = computed(() => text[currentLanguage.value]);
 
 const social = [
   {
