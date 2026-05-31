@@ -54,12 +54,12 @@
           </button>
         </div>
       </WindowContainer>
-      <WindowContainer title="Technologies & Softwares" icon="mingcute:server-fill" class="md:col-span-2 min-w-0">
+      <WindowContainer title="Compétences & technologies" icon="mingcute:server-fill" class="md:col-span-2 min-w-0">
         <div class="my-2 mb-4 text-center">
           <div class="flex gap-4 max-md:flex-col w-full items-center">
             <div class="my-2 mt-4 text-md md:text-right w-full">
-              <h3 class="text-xl mb-2 font-bold max-md:text-center">Technologies Used</h3>
-              <p>I have been using some of these technologies for years, especially Front-end part</p>
+              <h3 class="text-xl mb-2 font-bold max-md:text-center">Compétences en développement</h3>
+              <p>Je développe progressivement mes compétences en développement web à travers des projets académiques et personnels. J'utilise principalement HTML, CSS, PHP et MySQL pour créer des applications web simples et fonctionnelles, tout en découvrant de nouvelles technologies comme Vue.js et JavaScript moderne.</p>
             </div>
             <div class="my-2 text-md text-left md:w-1/2 w-full">
               <!--  -->
@@ -77,8 +77,8 @@
           <Separator icon="mingcute:close-fill" />
           <div class="flex gap-4 max-md:flex-col w-full flex-row-reverse items-center">
             <div class="my-2 mt-4 text-md md:text-left w-full">
-              <h3 class="text-xl mb-2 font-bold max-md:text-center">Tools Used</h3>
-              <p>This is what I mostly use to create, develop, and maintain my projects</p>
+              <h3 class="text-xl mb-2 font-bold max-md:text-center">Outils Utilisés</h3>
+              <p>Dans le cadre du BUT Réseaux & Télécommunications, j'utilise différents outils pour la configuration, l'analyse et le développement de solutions réseaux. Je travaille notamment avec Linux, Cisco Packet Tracer, Wireshark et Raspberry Pi afin de mieux comprendre les infrastructures et systèmes connectés.</p>
             </div>
             <div class="my-2 text-md text-left md:w-1/2 w-full">
               <!--  -->
@@ -96,8 +96,8 @@
           <Separator icon="mingcute:celebrate-fill" />
           <div class="mt-8 relative">
             <div class="text-center">
-              <h3 class="text-3xl mb-2 font-bold max-md:text-center">Programming Languages Used</h3>
-              <p>This is the language I've mostly to rarely use. The less visible it is, the less used</p>
+              <h3 class="text-3xl mb-2 font-bold max-md:text-center">Langages de Programmation Utilisés</h3>
+              <p>Je continue à développer mes compétences en programmation en pratiquant différents langages selon les besoins de mes projets. Mon objectif est d'acquérir une base solide en développement tout en restant ouvert à l'apprentissage de nouvelles technologies.</p>
             </div>
             <div class="flex flex-wrap gap-4 my-8 justify-center">
               <template v-for="(icon, text, i) in prog.lang">
@@ -141,17 +141,19 @@ const prog = {
     CSS: "css3",
     PHP: "php",
     MySQL: "mysql",
+    Vue: "vuejs",
     Javascript: "javascript",
-    GitHub: "github",
-    Linux: "linux",
-    Python: "python"
+    Python: "python",
+    Linux: "linux"
   },
   tool: {
     "Visual Studio Code": "vscode",
     Git: "git",
     Github: "github",
-    Linux: "linux",
-    Docker: "docker"
+    "Cisco Packet Tracer": "",
+    Wireshark: "",
+    LoRa: "",
+    "Raspberry Pi": "raspberrypi"
   },
   lang: {
     PHP: "php",
